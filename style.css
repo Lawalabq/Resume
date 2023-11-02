@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'MerriReg';
+    src: url('fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cursive';
+    src: url('fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Freescript';
+    src: url('fonts/FREESCPT.TTF');
+}
+
+@font-face {
+    font-family: 'Hamilton';
+    src: url('fonts/Hamiltone-Demo.otf');
+}
+
+@font-face {
+    font-family: 'Terano';
+    src: url('fonts/Terano\ Regular.ttf');
+}
+
+header {
+    background-color: rgb(35, 71, 137);
+    color: white;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#portrait {
+
+    background-image: url(resumepics/Mainpic.jpg);
+    height: 180px;
+    width: 190px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    margin-top: 25px;
+    border: 2px snow solid;
+
+
+}
+
+#description {
+    text-align: right;
+    width: 1200px;
+    height: 200px;
+    font-family: cursive;
+
+
+}
+
+#Ambition h2 {
+    background-color: rgb(35, 71, 137);
+    height: 60px;
+    width: 90px;
+    color: whitesmoke;
+    margin-left: 40px;
+    text-align: center;
+    font-family: Hamilton;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+h1 {
+    margin-top: 130px;
+}
+
+#Ambition p {
+    height: 250px;
+    background-color: silver;
+    font-size: 40px;
+    width: 1250;
+    margin: auto;
+    font-family: Freescript;
+    font-size: 50px;
+}
+
+#Ambition {
+    margin-bottom: 40px;
+}
+
+#certificates h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: azure;
+    font-size: xx-large;
+    background-color: #b6b6d8;
+    height: 60px;
+    width: 200px;
+    margin: auto;
+    font-size: 50px;
+    font-family: Freescript;
+
+}
+
+.certs {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: Terano;
+    font-size: 13px;
+    justify-content: space-around;
+
+}
+
+.certs h3 {
+    margin-top: 60px;
+}
+
+.certs:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: rgb(101, 101, 172);
+}
+
+h4 {
+    margin-left: 30px;
+}
+
+#footer {
+    display: block;
+}
+
+#footer {
+    height: 200px;
+    text-align: center;
+    background-color: rgb(61, 64, 112);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p a {
+
+    color: white;
+
+}
+
+#footer p {
+    margin-top: 100px;
+    margin: auto;
+}
+
+.skills {
+    width: 80px;
+    height: 40px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    color: slategrey;
+}
+
+#skillset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+span {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #description {
+        text-align: center;
+    }
+
+    #Ambition p {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #description {
+        text-align: center;
+        font-size: 13px;
+
+    }
+
+    #Ambition p {
+        width: auto;
+        height: auto;
+    }
+
+    .certs {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    #Ambition p {
+        font-size: 35px;
+    }
+
+    #portrait {
+        height: 250px;
+        width: 250px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
